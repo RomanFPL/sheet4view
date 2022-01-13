@@ -1,0 +1,25 @@
+{
+  "name": "sheet4view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && npm run install:backend",
+    "install:backend": "cd backend && npm install",
+    "start:backend": "cd backend && npm run start",
+    "start": "concurrently -k -p \"{name}: {time}\" -n \"Backend\" \"npm:start:backend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanFPL/sheet4view.git"
+  },
+  "author": "RF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanFPL/sheet4view/issues"
+  },
+  "homepage": "https://github.com/RomanFPL/sheet4view#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
